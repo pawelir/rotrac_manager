@@ -1,0 +1,8 @@
+<launch>
+    <group ns="rotrac_manager">
+        <rosparam file="$(find rotrac_manager)/config/rotrac_manager_node.yaml" />
+    </group>
+    
+    <node pkg="rotrac_manager" type="rotrac_manager_node.py" name="rotrac_manager" output="screen"/>
+
+</launch>
